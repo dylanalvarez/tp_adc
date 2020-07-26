@@ -26,7 +26,7 @@ plt.plot(t, y, label='Salida (V)')
 plt.plot(sin_t, [sin / 100 for sin in sin_v], label='Entrada (V/100)')
 plt.xticks(
     [0, period, 2 * period, 3 * period],
-    ['0', '0.48m', '0.97m', '1.45m']
+    ['0', '4.8m', '9.7m', '14.5m']
 )
 plt.xlim(-0.0001, t[-1])
 plt.xlabel('Tiempo (s)')
