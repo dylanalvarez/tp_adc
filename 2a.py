@@ -1,9 +1,9 @@
 import math
 
-from scipy import signal
-from mpl_toolkits.axes_grid1 import host_subplot
-import mpl_toolkits.axisartist as AA
 import matplotlib.pyplot as plt
+import mpl_toolkits.axisartist as AA
+from mpl_toolkits.axes_grid1 import host_subplot
+from scipy import signal
 
 n_2 = 1.579e8
 

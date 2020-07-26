@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-from scipy import signal
 import numpy as np
+from scipy import signal
 
 n_2 = 1.579e8
 
