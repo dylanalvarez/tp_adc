@@ -31,7 +31,7 @@ plt.xticks(
 plt.xlim(-0.0001, t[-1])
 plt.xlabel('Tiempo (s)')
 plt.ylabel('Tensión (V)')
-plt.title('Respuesta al impulso para la transferencia asignada')
+plt.title('Respuesta a la entrada senoidal de 2070Hz para la transferencia asignada')
 plt.grid()
 plt.legend()
 plt.show()
