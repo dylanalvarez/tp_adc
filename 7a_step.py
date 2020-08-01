@@ -18,7 +18,9 @@ s1 = signal.lti(
 t, y = signal.step2(s1, N=1000)
 
 plt.plot(t, y, label="Salida (V)")
-plt.plot(t, [0.69*(math.exp(-2883.5*_t)*math.cos(8228*_t) - math.exp(-6001.5*_t)*math.cos(17088*_t)) - 0.0844 * math.exp(-2883.5 * _t) * math.sin(8228 * _t) - 0.0857 * math.exp(-6001.5 * _t) * math.sin(17088 * _t) for _t in t], label="Salida (V)")
+plt.plot(t, [0.69 * (math.exp(-2883.5 * _t) * math.cos(8228 * _t) - math.exp(-6001.5 * _t) * math.cos(17088 * _t))
+             - 0.0844 * math.exp(-2883.5 * _t) * math.sin(8228 * _t)
+             - 0.0857 * math.exp(-6001.5 * _t) * math.sin(17088 * _t) for _t in t], label="Salida (V)")
 plt.plot([-0.0005, 0, 0, t[-1]], [0, 0, 1, 1], label="Entrada (V)")
 plt.xlim(-0.0001, t[-1])
 plt.xlabel('Tiempo (s)')

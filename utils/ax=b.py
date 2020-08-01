@@ -1,5 +1,6 @@
-import numpy as np
 import fractions
+
+import numpy as np
 
 a = np.array([
     [1013000, -11000, 0],

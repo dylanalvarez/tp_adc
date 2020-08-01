@@ -26,13 +26,10 @@ f = 8228
 g = 17088
 
 plt.plot(t, y)
-plt.plot(t, [-a * math.exp(-a * _t) * (
-            c * math.cos(f * _t) - d * math.sin(f * _t)) - math.exp(-a * _t) * (
-                         c * f * math.sin(f * _t) + d * f * math.cos(
-                     f * _t)) + b * math.exp(-b * _t) * (
-                         c * math.cos(g * _t) + e * math.sin(
-                     g * _t)) - math.exp(-b * _t) * (
-                         -c * g * math.sin(g * _t) + e * g * math.cos(g * _t))
+plt.plot(t, [-a * math.exp(-a * _t) * (c * math.cos(f * _t) - d * math.sin(f * _t))
+             - math.exp(-a * _t) * (c * f * math.sin(f * _t) + d * f * math.cos(f * _t))
+             + b * math.exp(-b * _t) * (c * math.cos(g * _t) + e * math.sin(g * _t))
+             - math.exp(-b * _t) * (-c * g * math.sin(g * _t) + e * g * math.cos(g * _t))
              for _t in t])
 plt.xlim(-0.0001, t[-1])
 plt.xlabel('Tiempo (s)')
