@@ -35,11 +35,11 @@ h = 0.0108
 i = 4.28
 w = 1300.6
 
-plt.plot(t, y, label='Salida (V)')
+plt.plot(t, y)
 plt.plot(t, [c * (i * math.exp(-a * _t) * math.sin(f * _t) - math.exp(-a * _t) * math.cos(f * _t))
              + d * (math.exp(-b * _t) * math.cos(g * _t) - 2.001 * math.exp(-b * _t) * math.sin(g * _t))
-             + e * math.cos(w * _t) - h * math.sin(w * _t) for _t in t], label='Salida (V)')
-plt.plot(sin_t, [sin / 100 for sin in sin_v], label='Entrada (V/100)')
+             + e * math.cos(w * _t) - h * math.sin(w * _t) for _t in t])
+plt.plot(sin_t, [sin / 100 for sin in sin_v])
 plt.xticks(
     [0, period, 2 * period, 3 * period],
     ['0', '4.8m', '9.7m', '14.5m']
