@@ -24,11 +24,21 @@ mag_plot = host_subplot(111, axes_class=AA.Axes)
 plt.subplots_adjust(right=0.75)
 phase_plot = mag_plot.twinx()
 
-mag_plot.plot(w, mag, label="H (dB)")
+mag_plot.plot(
+    [1, 871.4, 8714, 18128, 181280, 100000000],
+    [-164, -46.4, -6.4, -6.4, -46.4, -156],
+    color="blue", linestyle='dotted', label="H (dB) (asintótico)"
+)
+mag_plot.plot(w, mag, color="blue", label="H (dB)")
 mag_plot.set_ylabel('H (dB)')
 mag_plot.set_ylim(-55, 1)
 
-phase_plot.plot(w, phase, label="Φ (grados)")
+phase_plot.plot(
+    [1, 871.4, 1812.8, 87140, 181280, 100000000],
+    [180, 180, 151.2, -151.2, -180, -180],
+    color="orange", linestyle='dotted', label="Φ (grados) (asintótico)"
+)
+phase_plot.plot(w, phase, color="orange", label="Φ (grados)")
 phase_plot.set_ylabel('Φ (grados)')
 phase_plot.set_ylim(-186, 186)
 phase_plot.axis["right"] = phase_plot.get_grid_helper().new_fixed_axis(
